@@ -58,13 +58,13 @@ exports.template = function(grunt, init, done) {
 	], function(err, props) {
 		props.keywords = [];
 		props.devDependencies = {
-			"grunt": "^0.4.5",
-			"grunt-contrib-jshint": "^0.10.0",
-			"grunt-contrib-watch": "^0.6.1",
-			"grunt-ec2": "^0.8.1",
-			"grunt-prompt": "^1.1.0",
-			"grunt-shell": "^0.7.0",
-			"grunt-ssh": "^0.11.1"
+			'grunt': '^0.4.5',
+			'grunt-contrib-jshint': '^0.10.0',
+			'grunt-contrib-watch': '^0.6.1',
+			'grunt-ec2': '^0.8.1',
+			'grunt-prompt': '^1.1.0',
+			'grunt-shell': '^0.7.0',
+			'grunt-ssh': '^0.11.1'
 		};
 		props.travis = /y/i.test(props.travis);
 
@@ -74,7 +74,7 @@ exports.template = function(grunt, init, done) {
 			delete files['.travis.yml'];
 		}
 
-		props.jshint = /y/i.test(props.jshint)
+		props.jshint = /y/i.test(props.jshint);
 
 		if (!props.jshint) {
 			delete files['.jshintrc'];

@@ -33,7 +33,7 @@ module.exports = function(grunt) {
 			}
 		},
 		sshconfig: {
-			"ssh": grunt.file.readJSON('./key/ssh_key.json'),
+			"ssh": grunt.file.readJSON('./key/ssh_key.json')
 		},
 		shell: {
 			dev: {
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
 			deploy: {
 				command: 'git pull',
 				options: {
-					config: "ssh"
+					config: 'ssh'
 				}
 			}
 		}
